@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style media="screen">
+      html, body {
+        width: 100%;
+        height: 100%;
+        cursor: none;
+      }
+    </style>
+  </head>
+  <body id="root" style="margin: 0; padding: 0;"></body>
+  <script>
+    // You can also require other files to run in this process
+    require('babel-register')({
+      presets: ['react', 'env'],
+      extensions: ['.jsx', '.js']
+    });
+    require('./renderer/index.js');
+  </script>
+</html>
